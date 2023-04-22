@@ -355,7 +355,6 @@ html,
       height: auto;
       background-color: @itemBg;
       border: 2px solid #cbcbcb;
-      // overflow: hidden;
     }
 
     &-card {
@@ -411,6 +410,7 @@ html,
   }
 
   &-center {
+    padding: 0 10px;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -424,12 +424,14 @@ html,
   }
 
   &-right {
+    height: auto;
     width: 400px;
     color: #fff;
+    overflow: hidden;
+
 
     table {
       width: 90%;
-      float: right;
       border-collapse: collapse;
       border-spacing: 0;
     }
@@ -441,6 +443,7 @@ html,
     }
 
     .pure-table {
+      width: 100%;
       border-collapse: collapse;
       border-spacing: 0;
       empty-cells: show;
