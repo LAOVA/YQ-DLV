@@ -1,8 +1,7 @@
 import { defineStore } from 'pinia'
 import { getList, getToday, getGuangdong } from '../server'
 import { parseJSONP } from '../utils/parseJSONP'
-export const useStore = defineStore({
-  id: 'conter',
+export const useStore = defineStore('conter', {
   state: () => ({
     list: [],  // 接口总数据
     Item: <any>[],  // 存放地图点击省份的数据
