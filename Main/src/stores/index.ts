@@ -4,10 +4,10 @@ import { parseJSONP } from '../utils/parseJSONP'
 export const useStore = defineStore({
   id: 'conter',
   state: () => ({
-    list: [],
-    Item: <any>[],
-    today: <any>{},
-    guangdong: <any>[]
+    list: [],  // 接口总数据
+    Item: <any>[],  // 存放地图点击省份的数据
+    today: <any>{},  // 今日总数统计
+    guangdong: <any>[]  // 广东数据
   }),
   actions: {
     async getList() {
