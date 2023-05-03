@@ -1,4 +1,4 @@
-export const parseJSONP = (jsonp: any) => {
+export const parseJSONP = (jsonp: string) => {
   let start = jsonp.indexOf('{');
   let end = jsonp.lastIndexOf('}');
   let json = jsonp.substring(start, end + 1);
